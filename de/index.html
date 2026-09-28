@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Bday+</title>
-<meta name="description" content="Remember every birthday and plan gifts ahead.">
-<link rel="canonical" href="https://ayoleynikov.github.io/BdayPlus/">
+<meta name="description" content="Behalte jeden Geburtstag im Blick und plane Geschenke im Voraus.">
+<link rel="canonical" href="https://ayoleynikov.github.io/BdayPlus/de/">
 <link rel="alternate" hreflang="en" href="https://ayoleynikov.github.io/BdayPlus/">
 <link rel="alternate" hreflang="ru" href="https://ayoleynikov.github.io/BdayPlus/ru/">
 <link rel="alternate" hreflang="es" href="https://ayoleynikov.github.io/BdayPlus/es/">
@@ -19,26 +19,6 @@
 <link rel="alternate" hreflang="zh-Hans" href="https://ayoleynikov.github.io/BdayPlus/zh-Hans/">
 <link rel="alternate" hreflang="zh-Hant" href="https://ayoleynikov.github.io/BdayPlus/zh-Hant/">
 <link rel="alternate" hreflang="x-default" href="https://ayoleynikov.github.io/BdayPlus/">
-<script>
-  // First visit only: open the index in the browser's language (never on privacy pages).
-  (function () {
-    try {
-      if (localStorage.getItem("bday-site-seen")) return;
-      localStorage.setItem("bday-site-seen", "1");
-      var base = location.href.replace(/[^\/]*([?#].*)?$/, "");
-      if (document.referrer && document.referrer.indexOf(base) === 0) return;
-      var map = { en: "en", ru: "ru", es: "es", de: "de", fr: "fr", it: "it", tr: "tr", ja: "ja", ko: "ko" };
-      var list = navigator.languages || [navigator.language || ""];
-      for (var i = 0; i < list.length; i++) {
-        var l = String(list[i] || "").toLowerCase(), t;
-        if (l.indexOf("zh") === 0) t = /hant|tw|hk|mo/.test(l) ? "zh-Hant" : "zh-Hans";
-        else if (l.indexOf("pt") === 0) t = "pt-BR";
-        else t = map[l.slice(0, 2)];
-        if (t) { if (t !== "en") location.replace(t + "/"); return; }
-      }
-    } catch (e) {}
-  })();
-</script>
 <style>
   :root { color-scheme: light dark; }
   body { margin:0; font:17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; display:grid; place-items:center; min-height:100vh; text-align:center; padding:20px; box-sizing:border-box; }
@@ -53,22 +33,22 @@
 <body>
 <div>
   <h1>🎂 Bday+</h1>
-  <p>Remember every birthday and plan gifts ahead.</p>
-  <p><a href="privacy.html">Privacy Policy</a></p>
+  <p>Behalte jeden Geburtstag im Blick und plane Geschenke im Voraus.</p>
+  <p><a href="privacy.html">Datenschutzerklärung</a></p>
   <p>Support: <a href="mailto:Ayoleynikov@icloud.com">Ayoleynikov@icloud.com</a></p>
-  <nav class="lang" aria-label="Language">
-    <a href="./" hreflang="en" lang="en" aria-current="page">English</a>
-    <a href="ru/" hreflang="ru" lang="ru">Русский</a>
-    <a href="es/" hreflang="es" lang="es">Español</a>
-    <a href="pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
-    <a href="de/" hreflang="de" lang="de">Deutsch</a>
-    <a href="fr/" hreflang="fr" lang="fr">Français</a>
-    <a href="it/" hreflang="it" lang="it">Italiano</a>
-    <a href="tr/" hreflang="tr" lang="tr">Türkçe</a>
-    <a href="ja/" hreflang="ja" lang="ja">日本語</a>
-    <a href="ko/" hreflang="ko" lang="ko">한국어</a>
-    <a href="zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
-    <a href="zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
+  <nav class="lang" aria-label="Sprache">
+    <a href="../" hreflang="en" lang="en">English</a>
+    <a href="../ru/" hreflang="ru" lang="ru">Русский</a>
+    <a href="../es/" hreflang="es" lang="es">Español</a>
+    <a href="../pt-BR/" hreflang="pt-BR" lang="pt-BR">Português (Brasil)</a>
+    <a href="../de/" hreflang="de" lang="de" aria-current="page">Deutsch</a>
+    <a href="../fr/" hreflang="fr" lang="fr">Français</a>
+    <a href="../it/" hreflang="it" lang="it">Italiano</a>
+    <a href="../tr/" hreflang="tr" lang="tr">Türkçe</a>
+    <a href="../ja/" hreflang="ja" lang="ja">日本語</a>
+    <a href="../ko/" hreflang="ko" lang="ko">한국어</a>
+    <a href="../zh-Hans/" hreflang="zh-Hans" lang="zh-Hans">简体中文</a>
+    <a href="../zh-Hant/" hreflang="zh-Hant" lang="zh-Hant">繁體中文</a>
   </nav>
 </div>
 </body>
